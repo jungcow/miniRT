@@ -6,12 +6,13 @@
 /*   By: jungwkim <jungwkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/30 12:11:45 by jungwkim          #+#    #+#             */
-/*   Updated: 2021/04/07 11:47:05 by jungwkim         ###   ########.fr       */
+/*   Updated: 2021/10/23 11:35:42 by jungwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "trace.h"
 #include "../vec/vec.h"
+#include "utils/utils.h"
 
 int		trace_world(t_world *world, t_ray *ray, t_hit *hit)
 {

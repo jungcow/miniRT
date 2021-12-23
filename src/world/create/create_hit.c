@@ -6,7 +6,7 @@
 /*   By: jungwkim <jungwkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/27 15:23:34 by jungwkim          #+#    #+#             */
-/*   Updated: 2021/05/07 11:01:15 by jungwkim         ###   ########.fr       */
+/*   Updated: 2021/12/23 22:33:26 by jungwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,15 +109,13 @@ int		solve_cylinder(t_ray *ray, t_cylinder *cylinder,
 			&& dot_vec(cp, cylinder->orient) >= 0)
 		return (1);
 	tmp = *ray;
-	tmp.origin = add_vec(hit, multi_vec(ray->dir, 1e-5));
-	init_coefficient(&tmp, cylinder, radius, &coefficient);
-	if (!solve_quadratic(coefficient.x, coefficient.y, coefficient.z, &tmp))
+	init_coefficient(ray, cylinder, radius, &coefficient);
+	if (!solve_quadratic(coefficient.x, coefficient.y, coefficient.z, ray))
 		return (0);
-	hit = add_vec(tmp.origin, multi_vec(tmp.dir, tmp.time));
+	hit = add_vec(ray->origin, multi_vec(ray->dir, ray->time));
 	cp = sub_vec(hit, cylinder->point);
 	if (dot_vec(cp, cylinder->orient) > height
 			|| dot_vec(cp, cylinder->orient) < 0)
 		return (0);
-	ray->time = tmp.time;
 	return (2);
 }

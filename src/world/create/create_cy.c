@@ -6,11 +6,12 @@
 /*   By: jungwkim <jungwkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/25 20:47:20 by jungwkim          #+#    #+#             */
-/*   Updated: 2021/05/07 10:59:55 by jungwkim         ###   ########.fr       */
+/*   Updated: 2021/10/23 11:35:31 by jungwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "create.h"
+#include "utils/utils.h"
 
 t_vec	get_normal(t_ray *ray, t_cylinder *cylinder, int flag)
 {

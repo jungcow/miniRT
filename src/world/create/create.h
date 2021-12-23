@@ -6,7 +6,7 @@
 /*   By: jungwkim <jungwkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/24 19:07:46 by jungwkim          #+#    #+#             */
-/*   Updated: 2021/05/07 11:00:21 by jungwkim         ###   ########.fr       */
+/*   Updated: 2021/12/23 18:58:10 by jungwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,7 @@ int		hit_cylinder(void *obj, t_ray *ray, t_hit *hit);
 int		hit_triangle(void *obj, t_ray *ray, t_hit *hit);
 void	init_coefficient(t_ray *ray, t_cylinder *cylinder,
 						double radius, t_vec *coefficient);
+void  loss_of_significance(double *q, double b, double discr);
 
 /*
 **	translate
@@ -104,6 +105,7 @@ int		solve_triangle(t_ray *ray, t_vec a, t_vec b, t_vec c);
 int		solve_cylinder(t_ray *ray, t_cylinder *cylinder,
 					double radius, double height);
 int		solve_quadratic(double a, double b, double c, t_ray *ray);
+int		solve_quadratic_max(double a, double b, double c, t_ray *ray);
 
 /*
 **	conversion metrix

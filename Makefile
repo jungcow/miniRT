@@ -6,7 +6,7 @@
 #    By: jungwkim <jungwkim@student.42seoul.kr>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/03/29 19:12:46 by jungwkim          #+#    #+#              #
-#    Updated: 2021/07/14 23:10:13 by jungwkim         ###   ########.fr        #
+#    Updated: 2021/12/23 22:36:01 by jungwkim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@
 NAME	=	miniRT
 
 CC		=	gcc
-CFLAGS	=	-Wall -Werror -Wextra -Ofast
+CFLAGS	:=	-Wall -Werror -Wextra -Ofast
 LIBS	=	-L./lib/libft -lft \
 			-L. -lmlx\
 			-L./lib/minilibx_opengl_20191021 -lmlx \
@@ -118,7 +118,7 @@ OBJS		=	$(SRCS:.c=.o)
 
 
 $(NAME)		:	$(OBJS)
-		make mms
+#make mms
 		make opengl
 		make libft
 		$(CC) $(LIBS) $(INC) $(CFLAGS) -framework OpenGL -framework AppKit -o $@ $^

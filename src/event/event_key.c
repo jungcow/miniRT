@@ -6,7 +6,7 @@
 /*   By: jungwkim <jungwkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/09 19:50:21 by jungwkim          #+#    #+#             */
-/*   Updated: 2021/05/06 09:05:18 by jungwkim         ###   ########.fr       */
+/*   Updated: 2021/12/23 18:28:25 by jungwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void	add_key(int key, t_trace *trace)
 			&& ((key >= ARROW_LEFT && key <= ARROW_UP) || key == KEY_F
 			|| key == KEY_B || key == KEY_X || key == KEY_Y || key == KEY_Z))
 		event_obj(key, trace);
-	printf("Selected [O / C]: %c\n", trace->event->selected);
+	printf("Selected [Object / Camera]: %c\n", trace->event->selected);
 }
 
 int		event_key(int keycode, void *param)

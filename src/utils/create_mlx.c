@@ -6,26 +6,26 @@
 /*   By: jungwkim <jungwkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/30 02:44:19 by jungwkim          #+#    #+#             */
-/*   Updated: 2021/04/05 17:15:53 by jungwkim         ###   ########.fr       */
+/*   Updated: 2021/12/23 18:20:05 by jungwkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "utils.h"
-#include "mlx_mms.h"
+#include "mlx.h"
+
+#define MAX_WIDTH 1920
+#define MAX_HEIGHT 1080
 
 void	create_mlx(t_world *world, t_mlx *mlx)
 {
-	int		width;
-	int		height;
-
 	mlx->ptr = mlx_init();
-	mlx_get_screen_size(mlx->ptr, &width, &height);
+//	mlx_get_screen_size(mlx->ptr, &width, &height);
 	mlx->width = world->resolution->width;
 	mlx->height = world->resolution->height;
-	if (mlx->width > width)
-		mlx->width = width;
-	if (mlx->height > height)
-		mlx->height = height;
+	if (mlx->width > MAX_WIDTH)
+		mlx->width = MAX_WIDTH;
+	if (mlx->height > MAX_HEIGHT)
+		mlx->height = MAX_HEIGHT;
 	mlx->a_ratio = mlx->width / (double)mlx->height;
 	world->resolution->width = mlx->width;
 	world->resolution->height = mlx->height;
