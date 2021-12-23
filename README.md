@@ -1,4 +1,22 @@
-# miniRT 이벤트 설명
+# Mini Ray Tracing
+## Overview - The Temple
+![temple](https://user-images.githubusercontent.com/60311340/147248458-eb0099cf-8aa3-4bc8-a144-7e1a9d74d6fc.gif)
+
+---
+## Camera with Sphere and Plane
+|Up and Down|Backward and Forward|Rotate with Pan|Rotate with Tilt|Object Transition|Camera Switching|
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+|![camera_up_and_down](https://user-images.githubusercontent.com/60311340/147249009-92aec9c1-53de-4845-af74-ba9facb151cb.gif)|![camera_back_forward](https://user-images.githubusercontent.com/60311340/147249016-221ee5ae-6807-482f-a5eb-fa13c02ac82e.gif)|![camera_rotate_pan](https://user-images.githubusercontent.com/60311340/147249026-19db7408-8710-4e2b-85d9-a0d083e9424c.gif)|![camera_rotate_tilt](https://user-images.githubusercontent.com/60311340/147249031-7dfb391d-2cb3-49ec-925b-8e040d1dc26f.gif)|![object_transition](https://user-images.githubusercontent.com/60311340/147249041-8243c7ac-d4bf-4796-9163-ac37b645226b.gif)|![camera_switching](https://user-images.githubusercontent.com/60311340/147249048-91fa2cf4-dc0f-4773-af07-2eaebc114689.gif)|
+
+
+## Rotating Object
+|Object|X axis|Y axis|Z axis|
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+|Triangle|![triangle_x_rotate](https://user-images.githubusercontent.com/60311340/147248551-30e2a0e6-c342-494c-8844-e480893f929a.gif)|![triangle_y_rotate](https://user-images.githubusercontent.com/60311340/147248561-d4d83187-83e7-4acf-857b-07256e7ad28a.gif)|![triangle_z_rotate](https://user-images.githubusercontent.com/60311340/147248565-f6032ded-2dcc-4595-9c0d-c3e54dc05abd.gif)|
+|Square|![square_x_rotate](https://user-images.githubusercontent.com/60311340/147248569-a4552d00-967a-4316-ab32-afb3236d185b.gif)|![square_y_rotate](https://user-images.githubusercontent.com/60311340/147248573-89758f0e-994f-405e-a0bb-ae436145b442.gif)|![square_z_rotate](https://user-images.githubusercontent.com/60311340/147248574-8f97ba88-3435-4ca2-8843-e13e4ce416ee.gif)|
+|Cylinder|![cylinder_x_rotate](https://user-images.githubusercontent.com/60311340/147248581-682adc0b-6325-497a-8c78-d83a6f33c371.gif)|![cylinder_y_rotate](https://user-images.githubusercontent.com/60311340/147248582-bc355878-b8b9-4269-aca8-ae006e47531f.gif)|![cylinder_z_rotate](https://user-images.githubusercontent.com/60311340/147248585-e965b24e-8314-4723-a3c8-6c8ba942a372.gif)|
+
+---
 ## Event
 
 > switch object
