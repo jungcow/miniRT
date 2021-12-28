@@ -17,8 +17,8 @@
 ├── includes
 ├── lib
 │   ├── libft
-│   ├── minilibx_mms_20200219
-│   └── minilibx_opengl_20191021
+│   ├── minilibx_mms_20200219(Provided)
+│   └── minilibx_opengl_20191021(Provided)
 ├── main.c
 ├── scene
 └── src
