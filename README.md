@@ -113,3 +113,5 @@ shift key 이후에는 아래쪽으로 회전하게 된다.
 > Terminate Program
 - `ESC key`: 프로그램을 종료한다.
 - `Click red cross button`: 프로그램을 종료한다.
+## 정리한 문서
+1. [wiki1](../../wiki/20210304%2528%25EB%25AA%25A9%2529)
