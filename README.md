@@ -130,7 +130,7 @@ shift key 이후에는 아래쪽으로 회전하게 된다.
 14. [코드 구현: rt 파일의 validation 부분](https://github.com/jungcow/42Cursus/wiki/20210323(%ED%99%94))
 15. [코드 구조: 월드 생성 부분](https://github.com/jungcow/42Cursus/wiki/20210324(%EC%88%98))
 16. [코드 구현: 월드 생성 부분](https://github.com/jungcow/42Cursus/wiki/20210325(%EB%AA%A9))
-17. [코드 구현: sphere 충돌 & shading 로직 부분](https://github.com/jungcow/42Cursus/wiki/202103026(%EA%B8%88))
+17. [코드 구현: sphere 충돌 & shading 로직 부분](https://github.com/jungcow/42Cursus/wiki/20210326(%EA%B8%88))
 18. [카메라 변환 metrix 부분](https://github.com/jungcow/42Cursus/wiki/20210405(%EC%9B%94))
 19. [코드 구현: 평면 충돌 & shading 로직 & bias 부분](https://github.com/jungcow/42Cursus/wiki/20210406(%ED%99%94))
 20. [코드 구현: 삼각형 & 사각형의 충돌 로직 부분](https://github.com/jungcow/42Cursus/wiki/20210407(%EC%88%98))
